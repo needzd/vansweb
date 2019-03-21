@@ -1,0 +1,290 @@
+/*首页、女子、排序*/
+section{
+	background-color: #F1F2ED;
+	width: 100%;
+	height: 88px;
+	padding-bottom: 25px;
+}
+.pathbox{
+	width: 100%;
+	height: 88px;
+	background: url(../img/bw.png) repeat-x left bottom;
+}
+.max_pathbox{
+	width: 1280px;
+	height: 88px;
+	margin: 0 auto;
+}
+.path_left{
+	width: 254px;
+	height: 88px;
+	line-height: 88px;
+	font-size: 16px;
+	float: left;	
+}
+.path_left a{
+	display: inline-block;
+	margin-right: 25px;
+	color: #589BC6;
+	font-weight: 600;
+}
+.path_left span{
+	display: inline-block;
+	margin: 0 25px;
+	color: #64686b;
+	font-weight: 600;
+}
+.path_right{
+	float: right;
+	width: 240px; 
+	height: 46px;
+	background: #fff;
+	color: #666;
+	border: 1px solid #d2d2d2;
+	margin: 20px 0;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 46px;
+}
+.path_right span:nth-child(1){
+	margin-left: 20px;
+	display: inline-block;
+}
+.path_right i{
+	font-size: 14px;
+	margin-left: 110px;
+	display: inline-block;
+}
+.content{
+	width: 100%;
+	overflow: hidden;
+	background: #F1F2ED;
+}
+
+/*商品列表*/
+.con_main{
+	width: 1280px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+/*商品列表--左侧*/
+.c_m_left{
+	width: 391px;
+	overflow: hidden;
+	float: left;
+	background: #fff;
+}
+.c_m_l_list{
+	width: 347px;
+	overflow: hidden;
+	margin: 0 22px;
+}
+.list_color{
+	width: 347px;
+	overflow: hidden;
+	border-bottom: 2px dotted #d2d2d2;
+}
+.list_color_title{
+	width: 347px;
+	line-height: 66px;
+	color: #000;
+	font-size: 18px;
+	cursor: pointer;
+	font-weight: 600;
+}
+.list_color_title span{
+	text-align: left;
+}
+.list_color_title i{
+	display: inline-block;
+	float: right;
+	/*margin-left: 275px;*/
+	font-size: 30px;
+}
+.list_color_con{
+	width: 347px;
+	/*height: 336px;*/
+	overflow: hidden;
+	display: none;
+}
+.list_color_con span{
+	margin: 5px 7px 5px 0;
+	display: inline-block;
+	font-size: 15px;
+}
+.list_color_con span a{
+	display: inline-block;
+	line-height: 44px;
+	height: 44px;
+	padding: 0 15px;
+	color: #589BC6;
+	font-weight: 600;
+	border: 1px solid #ccc;
+}
+.list_color_title i:nth-child(0){
+	display: none;
+}
+/*商品列表--右侧*/
+.c_m_right{
+	width: 870px;
+	overflow: hidden;
+	float: right;
+}
+.right_shoe{
+	width: 870px;
+	overflow: hidden;
+}
+.shoe_list{
+	width: 270px;
+	height:400px; 
+	margin-left: 20px;
+	float: left;
+}
+.shoe_img{
+	position: relative;
+}
+.shoe_img a{
+	display: inline-block;
+	width: 270px;
+	height: 270px;
+}
+.shoe_img img{
+	width: 270px;
+	height: 270px;
+}
+.shoe_img .shoe1-1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.shoe_img:hover .shoe1{
+	display: none;
+}
+.shoe_img:hover .shoe1-1{
+	display: block;
+}
+.shoe_title{
+	width: 270px;
+	height: 40px;
+	margin-top: 15px;
+	text-align: center;
+	font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+.shoe_title h3{
+	margin-bottom: 10px;
+	height: 44px;
+	line-height: 20px;
+}
+.shoe_title:hover h3 a{
+	color: #c8192e;
+}
+.shoe_title h3 a{
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 2px
+}
+.shoe_img .shoe_buy{
+	position: absolute;
+	bottom: 20px;
+	left: 45px;	
+	display: none;
+	width: 180px;
+	height: 50px;
+	background: #c8192e;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.shoe_list:hover .shoe_buy{
+	display: block;
+}
+.shoe_buy:hover{
+	background: #000;
+}
+
+/*猜你喜欢*/
+.shoe_like{
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+    padding-bottom: 10px;
+}
+.s_l_content{
+	width: 1280px;
+	overflow: hidden;
+	margin: auto;
+}
+.s_l_content h2{
+	font-size: 32px;
+    color: #000;
+    letter-spacing: 3px;
+    text-align: center;
+    height: 102px;
+    line-height: 102px;
+    padding-bottom: 50px;  
+}
+.like_list{
+	width: 940px;
+	overflow: hidden;
+	margin: auto;
+}
+.l_list_1{
+	width: 220px;
+	height: 280px;
+	float: left;
+	margin: 0 10px 10px 10px;
+}
+.l_list_1 img{
+	width: 220px;
+	height: 220px;
+}
+.l_list_1 h6{
+	width: 220px;
+	/*height: 22px;*/
+	overflow: hidden;
+	margin-top: 6px;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 2px;
+}
+.l_list_1 h6 a{
+	color: #64686b;	
+}
+.l_list_1 h6 a:hover{
+	color: #c8192e;
+}
+.l_list_1 p{
+	font-size: 16px;
+	color: #c8192e;
+	font-weight: 600;
+	text-align: center;
+	line-height: 22px;
+	padding-top: 3px;
+	padding-bottom: 4px; 
+}
+.list_l{
+	margin-left: 0px;
+}
+.list_r{
+	margin-right: 0px;
+}
+.like_more{
+	display: inline-block;
+	width: 162px;
+	height: 40px;
+	background: #000;
+	color: #fff;
+	font-weight: 600;
+	font-size: 16px;
+	text-align: center;
+	line-height: 40px;
+	margin: 30px 389px;
+}
