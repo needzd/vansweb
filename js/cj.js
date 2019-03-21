@@ -345,3 +345,36 @@ $(function(){
 // 		$(this).css("border-bottom","3px solid #000");
 // 		$(".intro-use").css("border","0");
 // 		$(".decr-content").css("display",
+
+
+
+function go(){
+	$("#goCar").click(function(){
+		var userInfo = getCookie("userphone");
+		if(userInfo==""){
+			location.href="login.html";
+			// return;
+		}
+
+		$.ajax({
+			type:"GET",
+			url:"php/addShoppingCart.php",
+			dataType:"JSON",
+			data:{
+
+				// goodsId=goodsid&vipName=userInfo&goodsCount=$(".productCount").html()
+				goodsId:goodsid,vipName:userInfo,goodsCount:$(".productCount").html()
+			},
+			success:function add(data){
+					if(data==1){
+						alert("添加成功！")
+						location.href = "shoppingcar.html?goodsId="+goodsid;
+					}else{
+						alert("添加！")
+					}
+				
+				}
+			
+			});
+	})
+}

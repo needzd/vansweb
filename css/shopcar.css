@@ -1,0 +1,193 @@
+section{
+    width: 100%;
+    overflow: hidden;
+    background: #F1F2ED;
+}
+.main_cart{
+    width: 1280px;
+    overflow: hidden;
+    padding-top: 40px; 
+    margin: auto;
+}
+.cart_title{
+    text-align: center;
+    line-height: 45px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #2b2b2b;
+    background: url(../img/bw.png) left bottom no-repeat;
+    background-repeat-x:repeat;
+    padding-bottom: 10px;
+}
+.small_title{
+    width: 1280px;
+    height: 60px;
+    margin: auto;
+}
+.small_title li{
+    text-align: center;
+    line-height: 30px;
+    float: left;
+    width: 325px;
+    height: 30px;
+    padding-top: 18px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    color: #d2d2d2;
+    font-weight: 600;
+}
+.small_title li:nth-child(1){
+    margin-left: 152px;
+}
+.x{ 
+    position: relative;
+    margin-top: 10px;
+    border-bottom: 2px solid #d7d8d4;
+    margin-bottom: 40px;
+}
+.ximg{
+    position: absolute;
+    left: 293px;
+    top: -11px;
+    width: 25px;
+}
+.cart_content{
+    width: 1280px;
+    height: 484px;
+    padding-bottom: 30px;
+}
+.c_title{
+    height: 44px;
+    border-bottom: 1px solid #d7d8d4;
+}
+
+.c_title span:nth-child(1), .c_shoe span:nth-child(1){
+    width: 72px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+.c_title span:nth-child(2) , .c_shoe span:nth-child(2){
+    width: 430px;
+    height: 141px;
+    padding-left: 25px;
+    text-align: left;
+}
+.c_title span,.c_shoe span{
+    font-size: 18px;
+    font-weight: 600;
+    color: #666;
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+}
+.c_shoe span{
+    vertical-align: middle;
+}
+.c_title span:nth-child(7), .c_shoe span:nth-child(7){
+    width: 160px;
+    text-align: center;
+}
+.c_shoe{
+    height: 141px;
+    border-bottom: 1px solid #d7d8d4;
+}
+.shoe_xinxi{
+    padding: 20px 0;
+    text-align: left;
+} 
+.xx_imgs{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    float: left;
+}
+.xx_text{
+    float: left;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.xx_text p{
+    color: #666;
+}
+.shoe_bt{
+    padding-top: 5px;
+    color: #2b2b2b;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+.bianji{
+    color: #589BC6; 
+    line-height: 30px;
+}
+.count_text{
+    width: 58px;
+    height: 25px;
+    border: 1px solid #d7d8d4;
+    padding: 1px 0;
+    text-align: center;
+}
+.count_box .count_jia ,.count_box .count_jian{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.yiruchu a{
+    color: #589BC6;
+}
+.yiruchu a:hover{
+    color: #C9192E;
+}
+.suan_money{
+    width: 365px;
+    height: 75px;
+    float: right;
+}
+.s_money , .s_z_money{
+    float: left;
+    font-weight: 600;
+    color: #666;
+    margin-left: 100px;
+}
+.s_money{
+    margin-top: 10px;
+    line-height: 30px;
+    font-size: 18px;
+}
+.s_z_money{
+    font-size: 24px;
+    line-height: 40px;
+}
+.money , .zong_money{
+    color: #C9192E;
+}
+.jiesaun{
+    width: 1280px;
+    height: 46px;
+    margin-top: 95px;
+    background: #000;
+}
+.js{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    float: right;
+    line-height: 46px;
+    padding-right: 25px;
+}
+.xiadan{
+    border: 0;
+    float: right;
+    width: 210px;
+    height: 46px;
+    background: #C9192E;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.c_shoe .count_zj{
+    color: #C9192E;
+    font-size: 16px;
+}
+.c_shoe .count_dj , .c_shoe .count_yh{
+    font-size: 16px;
+}

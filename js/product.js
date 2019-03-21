@@ -1,12 +1,16 @@
-$(function(){
-	function getUrlParam(name) {
-		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
-		var r = window.location.search.substr(1).match(reg); //匹配目标参数
-	 
-		if (r != null) return unescape(r[2]);
-		return null; //返回参数值
+var goodsid = getUrlParam("goodsId");
+let userInfo = getCookie("userphone");
+
+function getUrlParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg); //匹配目标参数
+ 
+	if (r != null) return unescape(r[2]);
+	return null; //返回参数值
 }
-	let goodsid = getUrlParam("goodsId");
+
+$(function(){
+	// let goodsid = getUrlParam("goodsId");
 	let datas = null;
 	$.ajax({
 		type:"GET",
@@ -18,9 +22,13 @@ $(function(){
 			showgoodsDetail(data);
 			fdj();
 			shop_count();
+			$("#shopcount").click(function(){
+				// $.get("php/getShoppingCart.php")	
+			});
 			}	
 		});
 
+		//动态获取数据
 		function showgoodsDetail(str){
 			let htmlStr = "";
 			htmlStr +=`
@@ -43,7 +51,7 @@ $(function(){
 					<div class="c_m_yingcang"></div>
 					<div class="c_m_right">
 						<div class="rig_title">
-							<h2>${str.goodsName}</h2>
+							<h2 id="name">${str.goodsName}</h2>
 							<p class="shoeprice">￥ ${str.goodsPrice}.00</p>
 						</div>
 						<div class="shoe_color">
@@ -77,7 +85,7 @@ $(function(){
 							</span>	
 						</div>
 						<div class="shopbtn">
-							<button class="shopcarbtn">加入购物车</button>
+							<input type="button" value="加入购物车" class="shopcarbtn">
 							<button class="buybtn">立即购买</button>
 							<div class="collect">
 								<img src="img/xin.jpg" />
@@ -98,10 +106,10 @@ $(function(){
 				</div>
 			`
 			$(".content").html(htmlStr);
-		}	
-    })
-
-
+		};		
+})
+	
+//放大镜
 	function fdj(){
 			let Imgs;
 			$("#l_imgslist").on("mouseenter","li",function(){
@@ -154,13 +162,13 @@ $(function(){
 			})
 	}
 
-	
+	//点击加入购物车
+	let goodsCount;
 	function shop_count(){
 		let jianshu=$("#s_count").val();
 		$("#shoe_add").click(function(){
 			jianshu ++;
 			$("#s_count").val(jianshu);
-			$(".hd_my_show").html(jianshu);
 		})
 		$("#shoe_jian").click(function(){
 			jianshu --;
@@ -168,40 +176,31 @@ $(function(){
 				jianshu=0;
 			}
 			$("#s_count").val(jianshu);
-			$(".hd_my_show").html(jianshu);
 		})
-
+		$(".shopcarbtn").click(function(){
+			$(".hd_my_show").html(jianshu);
+			if(userInfo==null){
+				location.href="login.html";
+			}
+			goodsCount = $("#s_count").val();
+			addCar(userInfo,goodsid,goodsCount)		
+		})	
 	}
 
-
-	// function changeCount(btn,sign){
-		
-		// //1.改变数量
-		// var count = Number(btn.parentNode.children[1].innerHTML);
-		// sign == "+" ?count++:count--;
-		// if(count<0){
-		// 	// count=0;
-		// 	return
-		// }
-		// btn.parentNode.children[1].innerHTML = count;
-		
-	// }	
-
-	window.onload = function(){
-		//给按钮绑定事件
-		var addbtn=$(".add");
-		for(var i=0;i<addbtn.length;i++){
-			addbtn[i].onclick=function(){
-				changeCount(this,"+");
+	function addCar(){
+		$.ajax({
+			type:"get",
+			url:"php/addShoppingCart.php",
+			data:{vipName:userInfo,goodsId:goodsid,goodsCount:goodsCount},
+			dataType:"JSON",
+			success:function(data){
+				if(data == "1"){
+					alert("添加成功！")
+				}else{
+					alert("添加失败！")
+				}
 			}
-		}
-		//2.给减号按钮绑定事件
-		var redbtn=$(".red");
-		for(var i=0;i<redbtn.length;i++){
-			redbtn[i].onclick=function(){
-				changeCount(this,"-");
-			}
-		}
-
-
+		});
 	}
+
+	
