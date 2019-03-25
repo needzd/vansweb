@@ -23,10 +23,10 @@ $(function(){
 			fdj();
 			shop_count();
 			$("#shopcount").click(function(){
-				// $.get("php/getShoppingCart.php")	
-			});
-			}	
-		});
+				location.href="shopcar.html";
+			})
+		}	
+	});
 
 		//动态获取数据
 		function showgoodsDetail(str){

@@ -53,14 +53,17 @@ section{
 }
 .cart_content{
     width: 1280px;
-    height: 484px;
+    /* height: 484px; */
+    overflow: hidden;
     padding-bottom: 30px;
 }
 .c_title{
     height: 44px;
     border-bottom: 1px solid #d7d8d4;
 }
-
+.cart_s{
+    overflow: hidden;
+}
 .c_title span:nth-child(1), .c_shoe span:nth-child(1){
     width: 72px;
     margin-left: 20px;
@@ -102,6 +105,7 @@ section{
     float: left;
 }
 .xx_text{
+    width: 310px;
     float: left;
     margin-left: 20px;
     font-size: 16px;
@@ -130,6 +134,7 @@ section{
     display: inline-block;
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
 .yiruchu a{
     color: #589BC6;
