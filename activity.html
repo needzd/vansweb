@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="css/header.css">
-	<link rel="stylesheet" type="text/css" href="css/shopcar.css">
 	<link rel="stylesheet" type="text/css" href="css/iconfont.css">
-	<link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/activity.css">	    	
 </head>
 <body>
 	<!-- header -->
@@ -19,7 +19,6 @@
 				</div>
 				<div class="hdLogin">
 					<a id="hd_reg" href="register.html">注册</a>
-					<!-- <div class="hd_tuichu"></div> -->
 					<a id="hd_reg_no" href="javascript:;">退出</a>
 
 					<a href="javascript:;" style="color: #9b9b9b;">&nbsp;/&nbsp;</a>
@@ -47,7 +46,7 @@
 							<a href="#">关于VANS <i class="iconfont icon-xiajiantou"></i>  <span>/</span><span class="nav_li_jiantou1"></span></a>	
 						</li>
 						<li>
-							<a href="activity.html">热门<span>/</span></a>
+							<a href="#">热门<span>/</span></a>
 						</li>
 						<li class="l2">
 							<a href="#" >男子 <i class="iconfont icon-xiajiantou"></i>     <span>/</span><span class="nav_li_jiantou2"></a>
@@ -59,7 +58,7 @@
 							<a href="#">CUSTOMS定制鞋<span>/</span></a>
 						</li>
 						<li class="l4">
-							<a href="#">更多产品  <i class="iconfont icon-xiajiantou"></i><l class="nav_li_jiantou4"></a>
+							<a href="#">更多产品  <i class="iconfont icon-xiajiantou"></i><span class="nav_li_jiantou4"></a>
 						</li>
 					</ul>
 				</div>
@@ -107,97 +106,47 @@
 		</div>
 	</header>
 
-    <!-- my shopping cart -->
+    <!-- content -->
     <section>
-        <div class="main_cart">
-            <!-- 购物车开始 -->
-            <h2 class="cart_title">我的购物车</h2>
+        <div class="content1">
+            <img src="img/a1.jpg" />
+            <a href="#" class="xuangou">选 购</a>
+        </div>
+        <div class="content2">
+            <div class="con2_left">
+                <img src="img/a2.jpg" />
+                <h3 class="left_h2">VERSA QZP 全新功能上装系列</h3>
+                <a href="#" class="xuangou xg_p">选 购</a>
+            </div>
 
-            <!-- 购物车步骤 -->
-            <ul class="small_title">
-                <li>STEP1 添加购物车</li>
-                <li>STEP2 填写和提交订单</li>
-                <li>STEP3 成功提交订单</li>
-            </ul>
-            <div class="x"><img class="ximg" src="img/x.png" /></div>
+            <div class="con2_right">
+                <img src="img/a3.jpg" />
+                <h3 class="left_h2  rig1">ComfyCush High上海站</h3>
+                <h4 class="left_h2 rig2">鸡尾酒化学实验课</h4>
+            </div>
+        </div>
+        <div class="content1 bot">
+                <img src="img/a4.jpg" />
+                <a href="#" class="xuangou">选 购</a>
+        </div>
+        <div class="content2">
+            <div class="con2_left">
+                <img src="img/a5.jpg" />
+                <h3 class="left_h2">VERSA QZP 全新功能上装系列</h3>
+                <a href="#" class="xuangou xg_p">选 购</a>
+            </div>
 
-            <!-- 购物车主体 -->
-            <div class="cart_content">
-                <div class="c_title">
-                    <span><input class="quanxuan" type="checkbox" checked/>   全选</span>
-                    <span>已选择的商品</span>
-                    <span>数量</span>
-                    <span>原价</span>
-                    <span>优惠</span>
-                    <span>总计</span>
-                    <span>操作</span>
-				</div>
-				<div class="cart_s">
-					<!-- <div class="c_shoe"> -->
-						<!-- <span>
-							<input class="quanxuan" type="checkbox" checked/>  选择
-						</span>
-						<span>
-							<div class="shoe_xinxi">
-								<img class="xx_imgs" src="img/shoe2.jpg" />
-								<div class="xx_text">
-									<a class="shoe_bt" href="#">SK8-HI PRO 男女同款滑板鞋</a>
-									<p>黄色/黑色/36</p>
-									<a class="bianji" href="#">编辑</a>
-								</div> 
-							</div>
-						</span>
-						<span class="count_box">
-							<p class="count_jian">-</p>
-							<input class="count_text" type="text" value="1" />
-							<p class="count_jia">+</p>
-						</span>
-						<span class="count_dj">￥595.00</span>
-						<span class="count_yh">￥0</span>
-						<span class="count_zj">￥595.00</span>
-						<span class="yiruchu"><a href="#">移入收藏夹</a> /<a href="#">移除</a></span> -->
-					<!-- </div> -->
-				</div>
-               
-                <!-- <div class="c_shoe">
-					<span>
-						<input class="quanxuan" type="checkbox" checked/>  选择
-					</span>
-					<span>
-						<div class="shoe_xinxi">
-							<img class="xx_imgs" src="img/shoe2.jpg" />
-							<div class="xx_text">
-								<a class="shoe_bt" href="#">SK8-HI PRO 男女同款滑板鞋</a>
-								<p>黄色/黑色/36</p>
-								<a class="bianji" href="#">编辑</a>
-							</div> 
-						</div>
-					</span>
-					<span class="count_box">
-						<p class="count_jian">-</p>
-						<input class="count_text" type="text" value="1" />
-						<p class="count_jia">+</p>
-					</span>
-					<span class="count_dj">￥595.00</span>
-					<span class="count_yh">￥0</span>
-					<span class="count_zj">￥595.00</span>
-					<span class="yiruchu"><a href="#">移入收藏夹</a> /<a href="#">移除</a></span>
-                </div> -->
-                <ul class="suan_money">
-                    <li class="s_money">商品金额：<span class="sp_money">￥<i>0</i><i>.00</i></span></li>
-                    <li class="s_z_money">总金额：<span class="zong_money">￥<i>0</i><i>.00</i></span></li>
-                </ul>
-                <div class="jiesaun">
-                    <button class="xiadan" href="#">下单结算 > </button>
-                    <a class="js" href="#">继续购物</a>
-                </div>
+            <div class="con2_right rig_two">
+                <img class="rig_img" src="img/a6.jpg" />
+                <h3 class="left_h2  rig1 rig1_1">CUSTOMS自由定制鞋斑马纹图案</h3>
+                <a href="#" class="xuangou xg_p1">选 购</a>
             </div>
         </div>
     </section>
+	
 
-
-	<!-- footer -->
-    <div class="foot">
+	<!-- footer-->
+	<div class="foot">
 		<div class="maxFooter">
 			<div class="footer">
 				<div class="foot_l">
@@ -300,7 +249,7 @@
 				</div>
 			</div>	
 		</div>
-	</div> 
+	</div>
 	
 	<!-- 悬浮 -->
 	<div class="service">
@@ -310,15 +259,12 @@
 			<img src="img/zd.png" />			
 		</div>
 	</div>
-
-
 </body>
 </html>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/cookieTools.js"></script>
 <script type="text/javascript" src="js/header.js"></script>
-<!-- <script type="text/javascript" src="js/product.js"></script> -->
-<script type="text/javascript" src="js/shopcar.js"></script>
+
 
 
 
